@@ -112,7 +112,6 @@ void inorder(NODE *node){
         cout << node->value << " ";
         inorder(node->right);
     }
-     cout << "\n";
 }
 void preorder(NODE *node){
     if (node != nullptr){
@@ -120,7 +119,6 @@ void preorder(NODE *node){
         preorder(node->left);
         preorder(node->right);
     }
-     cout << "\n";
 }
 void postorder(NODE *node) {
     if (node != nullptr) {
@@ -128,7 +126,6 @@ void postorder(NODE *node) {
         postorder(node->right);
         cout << node->value << " ";
     }
-    cout << "\n";
 }
 
 void levelorder(BINARY_TREE* binary_tree){

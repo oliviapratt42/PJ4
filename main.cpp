@@ -56,19 +56,19 @@ int main(int argc, char* argv[]){
         }
         else if(command.find("INORDER")!=string::npos){
             inorder(binary_tree->root);
-            //cout << "\n";
+            cout << endl;
         }
         else if(command.find("PREORDER")!=string::npos){
             preorder(binary_tree->root);
-           // cout << "\n";
+            cout << endl;
         }
         else if(command.find("POSTORDER")!=string::npos){
             postorder(binary_tree->root);
-            //cout << "\n";
+           cout << endl;
         }
         else if(command.find("LEVELORDER")!=string::npos) {
             levelorder(binary_tree);
-           //cout << "\n";
+           cout << endl;
         }
         else if(command.substr(0, 6) == "SEARCH"){
             stringstream s(command);
@@ -76,7 +76,7 @@ int main(int argc, char* argv[]){
             int value;
             s >> cmd >> value;
             searchTree(binary_tree->root, value);
-           // cout << "\n";
+           	
         } 
     }
     delete binary_tree;
